@@ -4,7 +4,7 @@
 
 This library exports `() => new Promise((resolve) => requestAnimationFrame(resolve))`
 
-Resolves a [`DOMHighResTimeStamp`](https://developer.mozilla.org/en-US/docs/Web/API/DOMHighResTimeStamp)
+Resolves to a [`DOMHighResTimeStamp`](https://developer.mozilla.org/en-US/docs/Web/API/DOMHighResTimeStamp) which is a `double`
 
 ## Install
 
@@ -20,4 +20,28 @@ Install with yarn:
 yarn add delay-by-animation-frame
 ```
 
-## Examples
+## Example
+
+```javascript
+import delayByAnimationFrame from "delay-by-animation-frame";
+
+async function animate() {
+  const element = document.getElementById("element-id");
+  let start;
+
+  while (true) {
+    const timestamp = await delayByAnimationFrame();
+
+    if (start === undefined) start = timestamp;
+
+    const elapsed = timestamp - start;
+
+    if (elapsed > 2000) break;
+
+    element.style.transform =
+      "translateX(" + Math.min(0.1 * elapsed, 200) + "px)";
+  }
+}
+
+animate();
+```
