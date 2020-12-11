@@ -9,7 +9,8 @@
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
     "outDir": "dist",
+    "declaration": true,
     "sourceMap": true
   },
-  "include": ["index.ts"]
+  "include": ["src/*.ts"]
 }
