@@ -1,0 +1,45 @@
+{
+  "name": "delay-by-animation-frame",
+  "version": "1.0.0",
+  "description": "A Promise wrapper around requestAnimationFrame",
+  "keywords": [
+    "requestAnimationFrame",
+    "Promise",
+    "delay"
+  ],
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && jest",
+    "release": "HUSKY_SKIP_HOOKS=1 standard-version"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "author": {
+    "name": "Calvin Liang",
+    "email": "npm@calvin.sh",
+    "url": "https://calvin.sh"
+  },
+  "repository": "Calvin-LL/delay-by-animation-frame",
+  "bugs": "https://github.com/Calvin-LL/delay-by-animation-frame/issues",
+  "homepage": "https://github.com/Calvin-LL/delay-by-animation-frame",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@types/jest": "^26.0.19",
+    "commitizen": "^4.2.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^4.3.5",
+    "jest": "^26.6.3",
+    "lint-staged": "^10.5.3",
+    "playwright-chromium": "^1.6.2",
+    "prettier": "^2.2.1",
+    "standard-version": "^9.0.0",
+    "ts-jest": "^26.4.4",
+    "typescript": "^4.1.2"
+  }
+}
