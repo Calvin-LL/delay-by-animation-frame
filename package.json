@@ -29,7 +29,7 @@
   "homepage": "https://github.com/Calvin-LL/delay-by-animation-frame",
   "license": "MIT",
   "devDependencies": {
-    "@commitlint/cli": "^12.0.1",
+    "@commitlint/cli": "^12.1.1",
     "@commitlint/config-conventional": "^12.0.1",
     "@types/jest": "^26.0.22",
     "commitizen": "^4.2.3",
